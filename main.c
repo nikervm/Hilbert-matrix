@@ -8,6 +8,9 @@ int main(int ac, char **av)
         return 0;
     }
     for (int i = 1; i < ac; i++)
+    {
         create_and_calc(av[i]);
+        printf("************************************\n");
+    }
     return 0;
 }
