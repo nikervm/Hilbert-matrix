@@ -53,7 +53,7 @@ void create_and_calc(char *s)
     print_matrix(matrix, rank);
     if (rank == 1)
     {
-        printf("Детерминант = %f\n", 1.0);
+        printf("Детерминант = %f.20\n", 1.0);
         free(matrix);
         return;
     }
