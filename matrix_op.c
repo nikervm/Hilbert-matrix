@@ -36,14 +36,14 @@ void create_and_calc(char *s)
         printf("Ошибка аллоцирования памяти.\n");
         return;
     }
-    fill_matrix(matrix, rank);
-    print_matrix(matrix, rank);
     if (rank == 1)
     {
         printf("Детерминант = %f.20\n", 1.0);
         free(matrix);
         return;
     }
+    fill_matrix(matrix, rank);
+    print_matrix(matrix, rank);
     printf("Детерминант = %.20f\n", determinant(matrix, rank));
     free(matrix);
 }
