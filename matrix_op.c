@@ -1,18 +1,5 @@
 #include "header.h"
 
-static int check(char *s)
-{
-    if (*s == '0')
-        return 1;
-    while (*s)
-    {
-        if (!(*s >= '0' && *s <= '9'))
-            return 1;
-        s++;
-    }
-    return 0;
-}
-
 static void fill_matrix(double *arr, int n)
 {
     for (int i = 0; i < n * n; i++)
