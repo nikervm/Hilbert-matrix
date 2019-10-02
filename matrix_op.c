@@ -38,7 +38,7 @@ void create_and_calc(char *s)
     }
     if (rank == 1)
     {
-        printf("Детерминант = %f.20\n", 1.0);
+        printf("Детерминант = %.20f\n", 1.0);
         free(matrix);
         return;
     }
