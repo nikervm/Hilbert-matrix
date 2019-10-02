@@ -39,12 +39,11 @@ void create_and_calc(char *s)
     double *matrix;
     int rank;
     
-    if (check(s))
+    if (!(rank = atoi(s)))
     {
         printf("Невалидный аргумент.\n");
         return;
     }
-    rank = atoi(s);
     if (!(matrix = (double *)malloc(sizeof(double) * rank * rank)))
     {
         printf("Ошибка аллоцирования памяти.\n");
