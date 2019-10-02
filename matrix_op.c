@@ -42,8 +42,11 @@ void create_and_calc(char *s)
         free(matrix);
         return;
     }
-    fill_matrix(matrix, rank);
-    print_matrix(matrix, rank);
+    else
+    {
+        fill_matrix(matrix, rank);
+        print_matrix(matrix, rank);
+    }
     printf("Детерминант = %.20f\n", determinant(matrix, rank));
     free(matrix);
 }
